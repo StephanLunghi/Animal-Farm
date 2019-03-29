@@ -10,8 +10,8 @@ namespace Animal_Farm
     {
         static void Main(string[] args)
         {
-            Dialogue dialogue = new Dialogue();
-            UserActions useractions = new UserActions();
+            var dialogue = new Dialogue();
+            var useractions = new UserActions();
 
             
 
@@ -22,10 +22,11 @@ namespace Animal_Farm
 
             //intialize your animals   CHECK 
             dialogue.IntroDialogue();
+            Console.Clear();
             //application loop
             do
             {
-                
+                Console.Clear();
                 useractions.ChooseAnimals();
                 //display messages
                 //ask for user input

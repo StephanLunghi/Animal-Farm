@@ -41,7 +41,7 @@ namespace Animal_Farm
                         {
                             Console.Clear();
                             horse.Speak();
-                            Console.ReadLine();
+                            
                             
                             
                             
@@ -50,7 +50,7 @@ namespace Animal_Farm
                         {
                             Console.Clear();
                             horse.Feed();
-                            Console.ReadLine();
+                            
                             
                             
                         }

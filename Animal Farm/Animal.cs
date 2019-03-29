@@ -40,6 +40,7 @@ namespace Animal_Farm
         {
             Console.WriteLine("GO ON, get away Horse!!");
             Console.WriteLine("The horse got spooked and ran away");
+            health--;
             Console.WriteLine($"Current health = {health}");
             Console.ReadLine();
         }
@@ -73,6 +74,14 @@ namespace Animal_Farm
             Console.WriteLine("The chicken jumps for joy!");
             health++;
             Console.WriteLine($"Current health = {health}");
+        }
+        public void ShooAway()
+        {
+            Console.WriteLine("GO ON, get away MANGY DOG!!");
+            Console.WriteLine("The dog whined and ran away");
+            health--;
+            Console.WriteLine($"Current health = {health}");
+            Console.ReadLine();
         }
 
     }
@@ -109,6 +118,7 @@ namespace Animal_Farm
             Console.WriteLine("Scat, get away cat!");
             Console.WriteLine("The cat scurried away");
             health--;
+            Console.WriteLine($"Current health = {health}");
         }
 
         public void Feed()
@@ -128,7 +138,7 @@ namespace Animal_Farm
             if (health <= 0)
             {
                 isalive = false;
-                Console.WriteLine("Your Horse has died");
+                Console.WriteLine("Your chicken has died");
             }
         }
             public void Speak()
@@ -142,6 +152,14 @@ namespace Animal_Farm
             Console.WriteLine("The chicken jumps for joy!");
             health++;
             Console.WriteLine($"Current health = {health}");
+        }
+        public void ShooAway()
+        {
+            Console.WriteLine("GET OUT OF HERE BIRDS!!!");
+            Console.WriteLine("The chickens panic and run in circles");
+            health--;
+            Console.WriteLine($"Current health = {health}");
+            Console.ReadLine();
         }
     }
 }

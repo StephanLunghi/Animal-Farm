@@ -15,17 +15,17 @@ namespace Animal_Farm
 
             
 
-            Horse horse = new Horse();
-            Chicken chicken = new Chicken();
-            Dog dog = new Dog();
-            Cat cat = new Cat();
+            var horse = new Horse();
+            var chicken = new Chicken();
+            var dog = new Dog();
+            var cat = new Cat();
 
             //intialize your animals   CHECK 
-
+            dialogue.IntroDialogue();
             //application loop
             do
             {
-                dialogue.IntroDialogue();
+                
                 useractions.ChooseAnimals();
                 //display messages
                 //ask for user input

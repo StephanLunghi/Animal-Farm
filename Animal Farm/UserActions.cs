@@ -19,7 +19,7 @@ namespace Animal_Farm
 
             ConsoleKeyInfo action;
             action = Console.ReadKey(true);
-            Horse horse = new Horse();
+            var horse = new Horse();
 
 
 

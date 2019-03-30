@@ -19,30 +19,40 @@ namespace Animal_Farm
             {
                 isalive = false;
                 Console.WriteLine("Your Horse has died");
+                Console.ReadLine();
             }
         }
 
         public void Speak()
         {
-            Console.WriteLine("Neeeeigh!");
-            Console.WriteLine($"Horse health = {health}");
-            Console.ReadLine();
+            if (isalive == true)
+            { 
+                Console.WriteLine("Neeeeigh!");
+                Console.WriteLine($"Horse health = {health}");
+                Console.ReadLine();
+            }
         }
 
         public void Feed()
         {
-            Console.WriteLine("The horse is fed");
-            health++;
-            Console.WriteLine($"Current health = {health}");
-            Console.ReadLine();
+            if (isalive == true)
+            {
+                Console.WriteLine("The horse is fed");
+                health++;
+                Console.WriteLine($"Current health = {health}");
+                Console.ReadLine();
+            }
         }
         public void ShooAway()
         {
-            Console.WriteLine("GO ON, get away Horse!!");
-            Console.WriteLine("The horse got spooked and ran away");
-            health--;
-            Console.WriteLine($"Current health = {health}");
-            Console.ReadLine();
+            if (isalive == true)
+            {
+                Console.WriteLine("GO ON, get away Horse!!");
+                Console.WriteLine("The horse got spooked and ran away");
+                health--;
+                Console.WriteLine($"Current health = {health}");
+                Console.ReadLine();
+            }
         }
 
 
@@ -61,27 +71,39 @@ namespace Animal_Farm
             {
                 isalive = false;
                 Console.WriteLine("Your Horse has died");
+                Console.ReadLine();
             }
         }
         public void Speak()
         {
-            Console.WriteLine("Bark Bark Bark!");
-            Console.WriteLine($"Dog health = {health}");
-        }
+            if (isalive == true)
+            { 
+                Console.WriteLine("Bark Bark Bark!");
+                Console.WriteLine($"Dog health = {health}");
+                Console.ReadLine();
+            }
+    }
         public void Feed()
         {
-            Console.WriteLine("You have fed the chicken");
-            Console.WriteLine("The chicken jumps for joy!");
-            health++;
-            Console.WriteLine($"Current health = {health}");
-        }
+            if (isalive == true)
+            {
+                Console.WriteLine("You have fed the chicken");
+                Console.WriteLine("The chicken jumps for joy!");
+                health++;
+                Console.WriteLine($"Current health = {health}");
+                Console.ReadLine();
+            }
+    }
         public void ShooAway()
         {
-            Console.WriteLine("GO ON, get away MANGY DOG!!");
-            Console.WriteLine("The dog whined and ran away");
-            health--;
-            Console.WriteLine($"Current health = {health}");
-            Console.ReadLine();
+            if (isalive == true)
+            {
+                Console.WriteLine("GO ON, get away MANGY DOG!!");
+                Console.WriteLine("The dog whined and ran away");
+                health--;
+                Console.WriteLine($"Current health = {health}");
+                Console.ReadLine();
+            }
         }
 
     }
@@ -93,9 +115,11 @@ namespace Animal_Farm
 
         public void Speak()
         {
+            
             Console.WriteLine("Meeeeooowwww");
             Console.WriteLine($"Cat lives = {lives}");
             Console.WriteLine($"Cat health = {health}");
+            Console.ReadLine();
         }
 
         public void Death()
@@ -105,10 +129,12 @@ namespace Animal_Farm
             if (health <= 0)
             {
                 Console.WriteLine($"Your cat has died, it has {lives} left.");
+                Console.ReadLine();
             }
             if (lives <= 0)
             {
                 Console.WriteLine("Your cat has really died, get the shovel!");
+                Console.ReadLine();
             }
             
         }
@@ -119,6 +145,7 @@ namespace Animal_Farm
             Console.WriteLine("The cat scurried away");
             health--;
             Console.WriteLine($"Current health = {health}");
+            Console.ReadLine();
         }
 
         public void Feed()
@@ -126,6 +153,8 @@ namespace Animal_Farm
             Console.WriteLine("You have fed the cat");
             Console.WriteLine("The cat continues to follow you");
             health++;
+            Console.WriteLine($"Cat health = {health}");
+            Console.ReadLine();
         }
     }
 
@@ -139,27 +168,39 @@ namespace Animal_Farm
             {
                 isalive = false;
                 Console.WriteLine("Your chicken has died");
+                Console.ReadLine();
             }
         }
             public void Speak()
         {
-            Console.WriteLine("cluck cluck cluck cluck");
-            Console.WriteLine($"Chicken health = {health}");
+            if (isalive == true)
+            {
+                Console.WriteLine("cluck cluck cluck cluck");
+                Console.WriteLine($"Chicken health = {health}");
+                Console.ReadLine();
+            }
         }
         public void Feed()
         {
-            Console.WriteLine("You have fed the chicken");
-            Console.WriteLine("The chicken jumps for joy!");
-            health++;
-            Console.WriteLine($"Current health = {health}");
+            if (isalive == true)
+            {
+                Console.WriteLine("You have fed the chicken");
+                Console.WriteLine("The chicken jumps for joy!");
+                health++;
+                Console.WriteLine($"Current health = {health}");
+                Console.ReadLine();
+            }
         }
         public void ShooAway()
         {
-            Console.WriteLine("GET OUT OF HERE BIRDS!!!");
-            Console.WriteLine("The chickens panic and run in circles");
-            health--;
-            Console.WriteLine($"Current health = {health}");
-            Console.ReadLine();
+            if (isalive == true)
+            {
+                Console.WriteLine("GET OUT OF HERE BIRDS!!!");
+                Console.WriteLine("The chickens panic and run in circles");
+                health--;
+                Console.WriteLine($"Current health = {health}");
+                Console.ReadLine();
+            }
         }
     }
 }

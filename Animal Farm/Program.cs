@@ -12,13 +12,14 @@ namespace Animal_Farm
         {
             var dialogue = new Dialogue();
             var useractions = new UserActions();
-
             
+
 
             var horse = new Horse();
             var chicken = new Chicken();
             var dog = new Dog();
             var cat = new Cat();
+            
 
             //intialize your animals   CHECK 
             dialogue.IntroDialogue();

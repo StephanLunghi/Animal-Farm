@@ -1,5 +1,5 @@
 # Animal-Farm
-Having fun with this Animal Farm project. Feed and shoo away animals to affect their health. 
+Having fun with this Animal Farm project. Feed and shoo away animals to change their health. 
 
 # What I learned
 
